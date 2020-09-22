@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class TicTacToe : MonoBehaviour
 {
+    public Texture2D img; // 背景图片
     public int[,] board = new int[3, 3]; // 创建一个 3 * 3 大小的棋盘
     public int step = 0; // 记录走的步数
     void Start() // 此为重置棋盘的函数，刚开始游戏时便重置
@@ -46,6 +47,12 @@ public class TicTacToe : MonoBehaviour
 
     void OnGUI() // 下的每一步棋子
     {
+
+        // 插入背景图片
+        GUIStyle myStyle = new GUIStyle();
+        myStyle.normal.background = img;
+        GUI.Label(new Rect(0, 0, Screen.width, Screen.height), "", myStyle);
+
         // 点击reset按钮进行重置棋盘的操作
         if (GUI.Button(new Rect(Screen.width / 2 - 150, Screen.height / 2 - 10, 50, 40), "reset"))
         {
