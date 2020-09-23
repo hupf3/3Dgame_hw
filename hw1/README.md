@@ -1,5 +1,5 @@
 # 编程实践，小游戏
-**[博客链接](https://blog.csdn.net/qq_43267773/article/details/108725590)**
+**[博客链接](https://blog.csdn.net/qq_43267773/article/details/108725590)**：包括了本次作业的简答题和附加题目
 
 - **游戏内容： 井字棋 或 贷款计算器 或 简单计算器 等等**
 
