@@ -28,9 +28,8 @@
 - 船上最多有两个人物
 - 不管哪个岸上，只要魔鬼数大于牧师数游戏失败(数量包括船只停靠时船上的人物数量)
 
-### 游戏资源
-
-[github地址](https://github.com/hupf3/3Dgame_hw/tree/master/hw2/Assets)
+### 博客地址
+[博客地址](https://blog.csdn.net/qq_43267773/article/details/108878241)
 
 ### 游戏截图和视频
 
