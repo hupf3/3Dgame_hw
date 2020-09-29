@@ -46,8 +46,7 @@
 ### 游戏Assets结构
 
 设计的结构完全是按照标准的结构构建的，如下图所示
-
-<img src="/Users/hupf/Library/Application%20Support/typora-user-images/image-20200929230951833.png" alt="image-20200929230951833" style="zoom:50%;" />
+<img src="https://img-blog.csdnimg.cn/20200930002933307.png#pic_center" alt="在这里插入图片描述" style="zoom:50%;" />
 
 - Materials：存放游戏中的Material
 - Resources：存放游戏中的对象的预制
@@ -659,40 +658,3 @@ public class ClickGUI : MonoBehaviour {
 }
 ```
 
-## 思考题【选做】
-
-- **使用向量与变换，实现并扩展 Tranform 提供的方法，如 Rotate、RotateAround 等**
-
-解答：
-
-- > Rotate:
-  >
-  > Rotates the object around the given axis by the number of degrees defined by the given angle.
-  >
-  > Rotate has an axis, angle and the local or global parameters. The rotation axis can be in any direction.
-
-  需要实现绕v轴旋转角度x，得到了旋转之后，就可以改变t的position和rotation
-
-  ```c#
-  void Rotate(Transform t, Vector3 axis, float angle)
-  {
-  	var r = Quaternion.AngleAxis(angle, axis);
-      t.position = r * t.position; t.rotation *= r;
-  }
-  ```
-
-  
-
-- > RotateAround:
-  >
-  > Rotates the transform about `axis` passing through `point` in world coordinates by `angle` degrees.
-
-  此函数是围绕中心旋转，我们需要得到物体的位移，求完之后，将它进行旋转然后加上中心的位移即可。
-```c#
-void RotateAround(Transform t, Vector3 center, Vector3 axis, float angle)
-{
-    var r = Quaternion.AngleAxis(angle, axis);
-    var dis = t.position - center;
-    dis *= r; t.position = center + dis; t.rotation *= r ;
-}
-```
