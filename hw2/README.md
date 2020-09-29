@@ -47,6 +47,7 @@
 ### 游戏Assets结构
 
 设计的结构完全是按照标准的结构构建的，如下图所示
+
 <img src="https://img-blog.csdnimg.cn/20200930002933307.png#pic_center" alt="在这里插入图片描述" style="zoom:50%;" />
 
 - Materials：存放游戏中的Material
