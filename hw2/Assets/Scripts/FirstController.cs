@@ -12,6 +12,7 @@ public class FirstController : MonoBehaviour, SceneController, UserAction {
 	public GroundController g2;
 	public BoatController boat;
 	private RoleController[] roles; 
+	private float time; // 游戏运行的时间
 
 	void Awake() {
 		Director d = Director.getInstance ();
@@ -19,6 +20,14 @@ public class FirstController : MonoBehaviour, SceneController, UserAction {
 		uGUI = gameObject.AddComponent <UserGUI>() as UserGUI;
 		roles = new RoleController[6];
 		LoadResources();
+		time = 60;
+	}
+
+	// 游戏时间的运行
+	void Update() {
+		time -= Time.deltaTime;
+		this.gameObject.GetComponent<UserGUI>().time = (int) time;
+		uGUI.isWin = isfinished ();
 	}
 
 	private void loadRole() {
@@ -83,6 +92,7 @@ public class FirstController : MonoBehaviour, SceneController, UserAction {
 	}
 // 判断是否结束 0:没有结束 1:输 2:赢
 	int isfinished() {	
+		if (time < 0) return 1;
 		int p1 = 0; int d1 = 0; // 起始点牧师与魔鬼数量
 		int p2 = 0; int d2 = 0; // 终点牧师与魔鬼数量
 
@@ -107,6 +117,7 @@ public class FirstController : MonoBehaviour, SceneController, UserAction {
 	}
 
 	public void restart() {
+		time = 60;
 		boat.reset ();
 		g1.reset (); g2.reset ();
 		for (int i = 0; i < roles.Length; i++) roles [i].reset ();
