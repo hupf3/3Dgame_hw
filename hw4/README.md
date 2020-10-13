@@ -45,6 +45,8 @@
 
 ### 博客地址
 
+选做内容博客有体现
+
 [传送门](https://blog.csdn.net/qq_43267773/article/details/109059574)
 
 ### 游戏运行说明
@@ -444,7 +446,7 @@ public void Pause(){ c.running = !c.running; }
 
 ### 实现
 
-首先创建一个游戏对象 `Sphere`，将 `Scale` 用以下数据填写，得到一个圆盘状的对象如下所示：
+首先创建一个游戏对象 `Sphere`，将 `Scale` 用数据(2, 0.1, 2)填写，得到一个圆盘状的对象如下所示：
 
 <img src="https://img-blog.csdnimg.cn/20201013193927495.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjY3Nzcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述" style="zoom:25%;" />
 
