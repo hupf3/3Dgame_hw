@@ -46,7 +46,11 @@
 
 ### 博客地址
 
-[传送门]()
+[传送门](https://blog.csdn.net/qq_43267773/article/details/109460564)
+
+### 游戏运行说明
+
+将 `Assets` 文件夹下载到本地，然后直接通过unity打开该文件即可成功运行，或者新建个项目，用该 `Assets` 文件夹覆盖原有的，打开后即可正常运行
 
 ### 游戏 Assets 结构
 
@@ -715,7 +719,11 @@ public class CCFlyAction2 : SSAction{
 
 ### 博客地址
 
-[传送门]()
+[传送门](https://blog.csdn.net/qq_43267773/article/details/109460564)
+
+### 游戏运行说明
+
+将 `Assets` 文件夹下载到本地，然后直接通过unity打开该文件即可成功运行，或者新建个项目，用该 `Assets` 文件夹覆盖原有的，打开后即可正常运行
 
 ### 游戏 Assets 结构
 
