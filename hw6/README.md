@@ -138,7 +138,7 @@
 
     因为是第一视角，所以需要在玩家上挂载一个相机，然后就可以实现：
 
-    <img src="/Users/hupf/Library/Application%20Support/typora-user-images/image-20201117132058501.png" alt="image-20201117132058501" style="zoom:33%;" />
+    <img src="https://img-blog.csdnimg.cn/20201117152025137.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzQzMjY3Nzcz,size_16,color_FFFFFF,t_70#pic_center" alt="在这里插入图片描述" style="zoom:33%;" />
 
   - `PlayerAnimator`：动作控制器，实现了玩家的动作的设置，以及状态转移
 
